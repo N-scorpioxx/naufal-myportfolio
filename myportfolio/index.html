@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Naufal Nadeem</title>
+    <link rel="icon" href="images/logo.jpg">
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style>
+    /* Styles for mhd3v.com */
+
+      @media screen and (max-width: 767px) {
+          body {
+              font-size: 0.9em;
+          }
+      }
+
+      @media screen and (min-width: 768px) {
+          body {
+              font-size: 1em;
+          }
+      }
+
+      @media screen and (min-width: 992px) {
+          body {
+              font-size: 1.2em;
+          }
+      }
+
+      @media screen and (min-width: 1200px) {
+          body {
+              font-size: 1.3em;
+          }
+      }
+
+      body {
+        font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", "sans-serif" !important;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav a{
+        color: white !important;
+        font-size: 1.4em !important;
+      }
+
+      .navbar-fixed-top .active a {
+        background-color: black !important; 
+        color: #08aad1 !important;
+      }
+      
+      .nav a:hover {
+        color: #08aad1 !important;
+        text-decoration: underline !important;
+      }
+
+      .navbarButton {
+        background-color: transparent !important;
+        color: white !important;
+        text-decoration: none ;
+      }
+
+      .navbar.navbar-inverse {
+        border-radius: 0px;
+        border: none;
+      }
+
+      .navbar-brand {
+        margin-top: 10px;
+        margin-left: 50px;
+        height: 70px;
+        width:72px;
+        background-image: url("images/logo.jpg");
+        background-size:cover;
+      }
+
+      .navbar-toggle {
+        font-size: 1.4em;
+        color: white;
+        border:none;
+      }
+
+      .heading{
+        font-weight: bold;
+        color: #18191b;
+        padding-top: 80px;
+        font-size: 310%;
+        text-align: center;
+      }
+      
+      #landingPanel {
+        background-image: url("images/bg.jpg");
+        width: 100%;
+        background-size:cover;
+      }
+
+      #introductionDiv {
+        width: 75%;
+      }
+
+      #nameHeader {
+        margin-top: -70px;
+        color: white;
+        font-size: 4.1em;
+        text-align: center;
+      }
+
+      #fieldHeader {
+        margin-top: -4px;
+        text-align: center;
+        font-family: monospace;
+        color: #f9f1e9;
+        text-transform: uppercase;
+        font-size: 2.0em;
+        letter-spacing: 0.1em;
+      }
+
+      .transparent {
+        background: rgba(0,0,0,0.4);
+      }
+
+      #imageCircle {
+        background: url("images/p1.png");
+        margin: 190px auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        background-color: black;
+      }
+
+      #footerDiv {
+        background-color: white;
+        height: 30%;
+        width: 100%;
+      }
+
+      .footerContent {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .footerImgPading {
+        margin-bottom: 5px;
+      }
+
+      #buttonList {
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+        list-style: none;
+        text-align: center;
+      }
+
+      #buttonList li {
+        width: 13%;
+        display: inline-block !important;
+        padding-top: 14px;
+
+        text-align: center;
+      }
+
+      #buttonList li:hover {
+        color: white;
+        background-color: #1191af;
+        border-radius: 10px;
+      }
+
+      a{
+        margin: 0;
+        padding: 0;
+        color: #08aad1;
+      }
+
+      a:hover {
+        color:#08aad1;
+        text-decoration: underline;
+      }
+
+      *:focus {
+        outline: none;
+      }
+
+      #portfolioDiv {
+        width: 100%;
+        background-color: #1b2834;
+      }
+
+      #portfolioDiv h2 {
+        margin-top: 30px;
+        color: #d7ddec;
+      }
+
+      .row2 {
+        margin: 0 auto;
+      }
+
+      .portfolioHeaders {
+        font-family: 'Montserrat', sans-serif;
+        color: #d7ddec !important;
+      }
+
+      .topDiv {
+        position: absolute;
+        z-index: 2;
+      }
+
+      .lowerDiv {
+        position: absolute;
+        z-index: 1;
+      }
+
+      #emptyDiv {
+        position: relative;
+        z-index: 80;
+      }
+
+      .row1 {
+        width: 85%;
+        margin: 0 auto;
+      }
+
+      .cols {
+        margin: 0 auto;
+        margin-left:2%;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+
+      .modalButtons {
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .modalHeading{
+        color: #18191b !important;
+      }
+
+      .footerButtons {
+        background: transparent ;
+        border: none ;
+        width: 100%;
+        height: 100%;
+        outline:none;
+      }
+
+      .main-title {
+        font-weight: bold;
+        margin-top: -85px;
+        text-align: center;
+        margin-bottom: 5px;
+        color: #f9f1e9;
+        text-transform: uppercase;
+        font-size: 4.2em;
+        letter-spacing: 0.1em;
+      }
+
+      .main-title .thin {
+        font-weight: 100;
+      }
+      
+    </style>
+
+  </head>
+
+    <body data-spy="scroll" data-target=".navbar-collapse">
+
+    <div id="top"></div>
+
+    <div class="wrapper">
+
+      <div class="navbar transparent navbar-inverse navbar-fixed-top">
+
+        <div class="container">
+
+          <div class="navbar-header">
+
+            <button class="navbar-toggle btn btn-default navbarButton" data-toggle="collapse" data-target =".navbar-collapse">
+              MENU
+            </button>
+
+            <a class="navbar-brand" href="#top"></a>
+
+          </div>
+
+          <div class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav navbar-right navItems pull-right">
+              <li><a href="#intro">INTRODUCTION</a></li>
+              <li><a href="#portfolio">PORTFOLIO</a></li>
+              <li><a href="#CV">CV</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div>
+        <div class="topDiv" id="large-header">
+          <canvas id="demo-canvas" ></canvas>
+        </div>
+    </div>
+
+
+    <div class="container contentContainer lowerDiv" id="landingPanel">
+
+        <div class="row">
+
+          <div id="imageCircle">
+            
+          </div>
+
+          <h1 class="main-title pull-up">Naufal <span class="thin">Nadeem</span></h1>
+          <h2 class="main-title small "id="fieldHeader"> 87.5% Computer Scientist</h2>
+          
+
+        </div>
+
+    </div>
+
+    <div id="emptyDiv"></div>
+
+      <div id="intro"></div>
+
+      <div class="container " id="introductionDiv">
+
+        <div class="row">
+
+          <h2 class="heading">INTRODUCTION</h2>
+          
+          <p class="lead">
+            My name is Muhammad Naufal, I'm 22 years old and I'm currently studying my Last year (7th semester) towards my undergraduate degree in Computer Science at COMSATS University in Islamabad, Pakistan.
+          </p>
+
+          <p class="lead">
+            I have been a technology enthusiast for as long as I can remember. I was always intrigued by how computers worked so getting to study Computer Science is something I can't be grateful enough for.
+        
+            I'm always on the hunt for new things to learn whether it's through working on my programming projects, tinkering with the OS of my phone or just watching theoretical Computer Science videos Online.
+          </p>
+
+        </div>
+
+    </div>
+
+    <div id="portfolio"></div>
+
+    <div class="container contentContainer" id="portfolioDiv">
+
+      <h2  class="heading">PORTFOLIO</h2>
+
+      <div class="row row1">
+
+        <div class="col-md-4">
+
+            <h2 class="portfolioHeaders">E-Commerce Web application</h2>
+            <button type="button" class="modalButtons" data-toggle="modal" data-target="#FilteredMessaging">
+            <img src="images/logo-lg.png" width="100%" height="100%">
+            </button>
+  
+        </div>
+
+        <div class="col-md-4">
+
+          <h2 class="portfolioHeaders">Job Portal</h2>
+          <button type="button" class="modalButtons" data-toggle="modal" data-target="#JobPortal">
+          <img src="images/jp.png" width="100%" height="100%">
+          </button>
+
+        </div>
+
+
+        <div class = "col-md-4 ">
+
+          <h2 class="portfolioHeaders">Online Quiz portal</h2>
+          <button type="button" class="modalButtons" data-toggle="modal" data-target="#dataStructuresModal">
+          <img src="images/oq.png" width="100%" height="100%">
+          </button>
+
+        </div>
+
+
+      </div>
+
+      <div class="row row1">
+
+          <div class = "col-md-4 ">
+
+              <h2 class="portfolioHeaders">Voting System</h2>
+              <button type="button" class="modalButtons" data-toggle="modal" data-target="#netlogoModal">
+              <img src="images/vs.png" width="100%">
+              </button>
+    
+          </div>
+          
+        <div class="col-md-4">
+
+          <h2 class="portfolioHeaders">Human Emotion Detection</h2>
+          <button type="button" class="modalButtons" data-toggle="modal" data-target="#enrepublicModal">
+          <img src="images/ed.jpg" width="100%" height="100%">
+          </button>
+
+        </div>
+
+        <div class = "col-md-4 ">
+
+          <h2 class="portfolioHeaders">ERP-Solution</h2>
+          <button type="button" class="modalButtons" data-toggle="modal" data-target="#miscModal">
+          <img src="images/erp.png" width="100%" height="100%">
+          </button>
+
+        </div>
+
+      </div>
+
+
+       <!-- Ecommerce Modal -->
+       <div id="FilteredMessaging" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">E-Commerce Website (ASP.NET)</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+                  For the semester project of WEB Engineering course I designed developed and deployed a ASP.NET Based E-Commerce website.<br><br>
+              </p>
+
+              <p>
+                User can Buy, Track, Leave Comments / Reviews / Rate any product.<br><br> In addition Admin Have the super Control who Have following Functionalities <br>
+                <li>Can edit Add/Delete/Update Anything.       </li>         
+                <li>Including Slider advertisements Promotions.</li>  
+                <li>Track Orders Of users.                     </li>                       
+                <li>Add/Edit products and categories.          </li>            
+              </p>
+
+              <p>
+                  This is now a hobby project. And i keep adding new Functionalities Depending on new trends of the market. <br><br>
+                  Major Technologies used are
+              </p>
+
+              <ul>
+                  <li>C#</li>
+                  <li>JQuery (mainly for AJAX)</li>
+                  <li>Bootstrap</li>
+                  <li>MSSQL (SQL SERVER)</li>
+                  <li>HTML & CSS</li>
+                </ul>
+                
+
+              <h5>
+                  To view the project visit here <a href="https://github.com/N-scorpioxx/E-Commerce-Website-ASP.NET/">Github</a>.
+              </h5> <br><br>
+
+              <img src="images/ECOM/s1.png" width="100%" height="60%">
+              <img src="images/ECOM/s2.png" width="100%" height="60%">
+              <img src="images/ECOM/s3.png" width="100%" height="60%">
+              <img src="images/ECOM/s4.png" width="100%" height="60%">
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- JobPortal Modal -->
+      <div id="JobPortal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Job Portal (Web Engineering)</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+                Job portal allows users to post and view job listings. The users include employers , Candidates And Admin. The employers can post a job listing for an open position and the candidates can in turn apply for the said position. 
+              </p>
+
+              <p>
+                Once a candidate (or multiple candidates) has/have applied for a job, the employer can review the application(s) and send out interview calls to the selected candidate(s).  
+              </p>
+
+              <p>
+                Some of the basic functionalities include: 
+              </p>
+
+              <ul>
+                <li>Registration of company / Candidate</li>
+                <li>Login</li>
+                <li>Creating job listings</li>
+                <li>Searching job listings</li>
+                <li>Viewing candidate’s application requests</li>
+                <li>Sending invitations to candidates for interview</li>
+                <li>Admin Can delete disable Verify any account for employer or candidate</li>
+                <li>Viewing resumes</li>
+                <li>Resume management</li>
+                <li>Applying for on a job listing</li>
+                <li>Application deletion</li>
+                <li>Listing deletion</li>
+                <li>Changing password</li>
+                <li>Generate CV online</li>
+              </ul>
+
+              <p>Major technologies used:</p>
+              
+              <ul>
+                <li>PHP</li>
+                <li>JQuery (mainly for AJAX)</li>
+                <li>Bootstrap</li>
+                <li>MySQL</li>
+                <li>HTML & CSS</li>
+              </ul>
+              
+              <h5>
+                Source code is available on my <a href="https://github.com/N-scorpioxx/Job-Portal-System" target="_blank">Github</a>.
+              </h5> <br><br>
+
+              <img src="images/JOB/p2.png" width="100%" height="60%">
+              <img src="images/JOB/p3.png" width="100%" height="60%">
+              <img src="images/JOB/p4.png" width="100%" height="60%">
+              <img src="images/JOB/p5.png" width="100%" height="60%">
+              <img src="images/JOB/p6.png" width="100%" height="60%">
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Online Quiz Portal Modal -->
+      <div id="enrepublicModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Online Quiz Portal</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+              For the subject of Machine Learning we developed a python based software which wil detect human emotions (angry, sad, happy, worried etc) from audio data<br>
+              Depending on the freqquncy of audio data The dataset which we used was CREAMA-D which included 7500 tuples<br>
+              Main algorithms used were
+              </p>
+              <ul>
+                  <li>KNN (Know nearest Neighbour)</li>
+                  <li>Decesion Tree</li>
+                  <li>Random Forest Tree (Highest Accuracy)</li>
+                  <li>SVM</li>
+              </ul>
+              <p>Main languages used are :</p>
+               <ul>
+                  <li>Python</li>
+                  <li>Jupiter Notebook</li>
+                </ul>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DS Modal -->
+      <div id="dataStructuresModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Movie Index System</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Online Quiz System is designed as a seperate module for Job portal That users can take a quiz while applying for a job.<br>
+                    Based on the results employers can evaluate the candidates best suited for the Job.<br><br>
+                    <strong>Admin</strong> can make Quizzes on the portal from their login. That will be taken by the candidate 
+                    </p>
+                    <p>Main Technologies used are :</p>
+                     <ul>
+                        <li>PHP</li>
+                        <li>Bootstrap</li>
+                        <li>MySQL</li>
+                        <li>HTML & CSS</li>
+                      </ul>
+              <p> You can check out the whole project over at <a href="https://github.com/N-scorpioxx/ONLINE-quiz-System">Github</a>.
+              </p>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MiscModal Modal -->
+      <div id="miscModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Different things I've done over the years</h4>
+            </div>
+            <div class="modal-body">
+              <h2 class="modalHeading">LineageOS Development</h2>
+              <p>A project was assigned to me to develope a full fledge ERP-Solution for a islamabad Based Tech company in my capacity as a <strong>Team Lead</strong><br><br>
+              Planning , Architecture level Designing , Documentation was purely done by me. While developement phase was a joint work with the team.
+              the Motivation behind the project was to automate all the workflows in any organization to better and efficient work.
+            </p>
+            <p>
+              Technology Used are
+              <ol>
+                <li>JAVA-EE Framework</li>
+                <li>MSSQL Server</li>
+                <li>bootstrap</li>
+                <li>HTML/CSS/JS</li>
+              </ol>
+            </p>
+            <img src="images/ERP/e1.png" width="100%" height="60%">
+            <img src="images/ERP/e2.png" width="100%" height="60%">
+            <img src="images/ERP/e3.png" width="100%" height="60%">
+            <img src="images/ERP/e4.png" width="100%" height="60%">
+            <img src="images/ERP/e5.png" width="100%" height="60%">
+           
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="netlogoModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Software Piracy Agent Based Model in Netlogo</h4>
+            </div>
+            <div class="modal-body">
+              
+              <p>
+                As the final project of Visual Programming We Developed a Biometric Voting System on Windows Application (C#)<br>
+                The main idea was to develope a system which can handle small votings ie: Local Refrendoms / CR votings in a transparent manner<br>
+
+              </p>
+
+              <p>
+                There are 2 types of actors <br>
+                <ol>
+                  <li>Admin</li>
+                  <li>Voter</li>
+                </ol>
+                
+                <strong>Admin</strong> Can Start a new voting and add all Voters and Candidates details including fingerprints.and finally close the voting after some specific time. 
+                The main Features of system are<br><br>
+                <ul>
+                  <li>Register Vote</li>
+                  <li>Register Candidate</li>
+                  <li>System Can detect Duplicate vote</li>
+                  <li>System Can Unregistered vote</li>
+                  <li>Show % of votes of each candidate</li>
+                  <li>OPEN / Close / Pause Voting process</li>
+                </ul>
+
+                Tehnologies used are
+                <ul>
+                    <li>C#</li>
+                    <li>MSSQL Server</li>
+                    <li>Bunifu Framework</li>
+                  </ul>
+              </p>
+
+              <h5>
+                You can find the complete project <a href="https://github.com/N-scorpioxx/Windows-Based-Voting-system">Github</a>.
+              </h5> <BR><br>
+
+            </div>
+
+            <img src="images/VOTING/V1.png" width="100%" height="60%">
+            <img src="images/VOTING/V2.png" width="100%" height="60%">
+            <img src="images/VOTING/V3.png" width="100%" height="60%">
+            <img src="images/VOTING/V4.png" width="100%" height="60%">
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <div id="CV"></div>
+    <div class="container" id="footerDiv">
+
+        <div class="row footerContent">
+
+         <h2 class="heading">Download MY CV here</h2>
+         <h3><a style="padding-left: 610px" href="docs/naufalscv.pdf" download="naufalscv">Click here</a></h3>
+ 
+        </div>
+
+    </div>
+
+    <div id="contact"></div>
+    <div class="container" id="footerDiv">
+
+          <div class="row footerContent">
+
+           <h2 class="heading">CONTACT</h2>
+
+                  <ul class="row" id="buttonList">
+
+                      <li class="email">
+                       <button class = "footerButtons" onclick="location.href = 'mailto:naufalnadeem01@gmail.com';" >
+                         <img class="footerImgPading email1" src="images/email.png" height="50px" width="50px"><br>
+                         <span class="email1 footerLinks">Email</span>
+                       </button>
+                      </li>
+
+                      <li class="email">
+                          <button class = "footerButtons" onclick="location.href = 'mailto:naufal@highontech.com';" >
+                            <img class="footerImgPading email2" src="images/email.png" height="50px" width="50px"><br>
+                            <span class="email2 footerLinks">Official Email</span>
+                          </button>
+                         </li>
+
+                      <li class="github">
+                       <button class = "footerButtons" onclick="location.href = 'https://github.com/N-scorpioxx/';" >
+                         <img class="footerImgPading github1" src="images/git.png" height="50px" width="50px"><br>
+                         <span class="footerLinks">Github</span>
+                        </button>
+                      </li>
+
+                      <li class="linkedin">
+                        <button class = "footerButtons" onclick="location.href = 'https://www.linkedin.com/in/muhammad-naufal-nadeem-41a26015a/';" >
+                         <img class="footerImgPading linkedin1" src="images/linkedin.png" height="50px" width="50px"><br>
+                         <span class="footerLinks">LinkedIn</span>
+                        </button>
+                      </li>
+
+                </ul>
+
+          </div>
+
+      </div>
+
+   <script type="text/javascript">
+
+      document.write('<style>body { visibility: hidden; } </style>');
+
+      if (!(screen.width <= 1000))
+      {
+        document.write('<script type="text/javascript" src="js/TweenLite.min.js"><\/script>');
+        document.write('<script type="text/javascript" src="js/EasePack.min.js"><\/script>');
+        document.write('<script type="text/javascript" src="js/demo-1.js"><\/script>');
+      }
+
+   </script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+   <script type="text/javascript">
+
+    $(".contentContainer").css("min-height",$(window).height());
+
+    var windowHeight = $(window).height();
+    var introductionDivHeight = (50*windowHeight)/100;
+
+    $("#introductionDiv").css("min-height",introductionDivHeight);
+
+    var x = $("#landingPanel").css("height");
+    var y = $("#landingPanel").css("width");
+
+    $("#emptyDiv").css("height", x);
+    $("#demo-canvas").css("width", y);
+
+    $("#large-header").css("height",x);
+
+    if($(window).width() < 1000){
+      $("#buttonList li").css("width","20%");
+      $(".main-title").css("margin-top","-120px");
+      $("#fieldHeader").css("margin-top","10px");
+    }
+
+
+    $("#buttonList li").hover(function(){
+
+      var selected = $(this).attr('class');
+      var selected1 = selected+"1";
+
+      if(!($(window).width() < 1000))
+        var notMobile = true;
+
+      switch(selected1) {
+
+      case "email1":
+          if(notMobile)
+            $('.email span').text("naufalnadeem01@gmail.com");
+          break;
+
+         case "email2":
+          if(notMobile)
+            $('.email span').text("naufal@highontech.com");
+          break;
+
+      case "twitter1":
+          if(notMobile)
+            $('.twitter span').text("twitter.com/mhd3v");
+          break;
+
+      case "github1":
+          if(notMobile)
+            $('.github span').text("https://github.com/N-scorpioxx/");
+          break;
+
+      case "linkedin1":
+          if(notMobile)
+            $('.linkedin span').text("https://www.linkedin.com/in/muhammad-naufal-nadeem-41a26015a/");
+          break;
+
+      default:
+
+      }
+
+      }, function() {
+      var selected = $(this).attr('class');
+      var selected1 = selected+"1";
+
+      switch(selected1) {
+
+      case "email1":
+          $('.email span').text("Email");
+          break;
+
+           case "email2":
+          $('.email span').text("Email");
+          break;
+
+      case "twitter1":
+          $('.twitter span').text("Twitter");
+          break;
+
+      case "github1":
+          $('.github span').text("Github");
+          break;
+
+      case "linkedin1":
+          $('.linkedin span').text("LinkedIn");
+          break;
+
+      default:
+      }
+
+    });
+
+    $(window).scroll(function() {
+      if($(window).scrollTop()+50 > $("#landingPanel").height()) 
+            $(".navbar").css("background","rgba(0,0,0,1)");
+      
+    else 
+            $(".navbar").css("background","rgba(0,0,0,0.4)");
+      
+    });
+
+    $(document).on('click', 'a', function(event){
+      event.preventDefault();
+
+      $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+    });
+
+    var $root = $('html, body');
+
+    $('a').click(function() {
+      $root.animate({
+      scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+      return false;
+    });
+
+
+    $(window).load(function() {
+      $("body").css("visibility","visible");
+    });
+
+   </script>
+
+  </body>
+</html>
